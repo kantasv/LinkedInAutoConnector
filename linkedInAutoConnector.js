@@ -46,11 +46,11 @@
         }
 
 
-        //gets random integers ranged from 0 to 500
+        //gets random integers ranged from 0 to 300
         //by changing intervals, LinkedIn is not likely to detect this sort of automation
         var getRandomInteger = () => {
             var min = 0;
-            var max = 500;
+            var max = 300;
             return Math.floor(Math.random() * (max + 1 - min)) + min;
         }
 
@@ -78,7 +78,7 @@
                         console.log('Unexpected error. Could not find button elements for operations.')
                     }
                     connectButtonCount++
-                }, 1000 + getRandomInteger())
+                }, getRandomInteger())
                 
 
             } else {
