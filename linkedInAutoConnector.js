@@ -77,8 +77,9 @@
                     } else {
                         console.log('Unexpected error. Could not find button elements for operations.')
                     }
+                    connectButtonCount++
                 }, 1000 + getRandomInteger())
-                connectButtonCount++
+                
 
             } else {
                 console.log('already clicked all connect buttons')
